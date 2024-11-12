@@ -108,6 +108,6 @@ function moveFooterToBottom() {
         footer.style.textAlign = 'center';
         footer.style.backgroundColor = '#f0f8ff';
         footer.style.padding = '10px 0';
-        footer.innerHTML = 'Criado por Music Tech Estudios';
+        //footer.innerHTML = 'Criado por Music Tech Estudios';
     }
 }
