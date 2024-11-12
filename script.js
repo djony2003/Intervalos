@@ -95,4 +95,19 @@ function analisarAcorde() {
     resultado += `</table>`;
 
     document.getElementById('resultado').innerHTML = resultado;
+
+    moveFooterToBottom();
+}
+
+function moveFooterToBottom() {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+        footer.style.position = 'fixed';
+        footer.style.bottom = '0';
+        footer.style.width = '100%';
+        footer.style.textAlign = 'center';
+        footer.style.backgroundColor = '#f0f8ff';
+        footer.style.padding = '10px 0';
+        footer.innerHTML = 'Criado por Music Tech Estudios';
+    }
 }
