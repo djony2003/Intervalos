@@ -48,6 +48,8 @@ function analisarAcorde() {
         intervalos = ['1', '2', '5'];
     } else if (qualif.includes('sus4')) {
         intervalos = ['1', '4', '5'];
+    } else if (qualif.includes('5+')) {
+        intervalos = ['1', '3', '#5'];
     } else {
         intervalos = ['1', '3', '5'];
     }
@@ -55,7 +57,7 @@ function analisarAcorde() {
     if (qualif.includes('b5')) {
         intervalos[2] = 'b5';
     }
-    if (qualif.includes('#5')) {
+    if (qualif.includes('#5') && !qualif.includes('5+')) {
         intervalos[2] = '#5';
     }
     if (qualif.includes('4') && !qualif.includes('sus4')) {
@@ -85,7 +87,7 @@ function analisarAcorde() {
                             <th>Nota</th>
                         </tr>`;
     intervalos.forEach((intervalo, i) => {
-        resultado += `<tr class=\"${intervalo === '1' ? 'raiz' : ''}\">
+        resultado += `<tr class="${intervalo === '1' ? 'raiz' : ''}">
                         <td>${INTERVALOS[intervalo].nome}</td>
                         <td>${notas[i]}</td>
                       </tr>`;
