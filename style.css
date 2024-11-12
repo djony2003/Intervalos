@@ -68,12 +68,10 @@ th {
 }
 
 .footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f0f8ff;
-    color: #333;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #666;
 }
 
