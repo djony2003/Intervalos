@@ -1,4 +1,4 @@
-const NOTAS = ['C', 'Db' , C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+const NOTAS = ['C', 'Db' , 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 const INTERVALOS = {
     '1': { semitons: 0, nome: 'Tônica' },
     'b2': { semitons: 1, nome: '2ª Menor' },
